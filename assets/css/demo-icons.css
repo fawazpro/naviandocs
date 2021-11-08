@@ -1,0 +1,85 @@
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html { 
+	font: 14px/1.6em 'Open Sans', arial, sans-serif;
+	-webkit-text-size-adjust:none;
+	color:#1e1e1e;
+	background-color:#fff;
+}
+body {
+	max-width: 90%;
+	margin: 30px auto 0;
+}
+h1, h3 {
+	font-weight: normal;
+}
+h3 {
+	font-size: 1.4;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+a { color: #0cb4ce; text-decoration: none; 
+	-webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;}
+a:hover, a:focus { color: #0cb4ce; }
+
+hr.sep { 
+	margin: 27px 0px 27px 0px;
+    border-style: solid; 
+    width: 90px; 
+    border-top-width: 2px; 
+    border-color: #0cb4ce; 
+}
+
+.icon-section {
+	margin: 0 0 3em;
+	clear: both;
+	overflow: hidden;
+}
+.icon-container {
+	display: inline-block;
+	width: 250px;
+	padding: .7em 1em;
+	position: relative;
+	text-align: left;
+	color: #aaa;
+}
+.icon-container a,
+.icon-container a:hover,
+.icon-container a:focus {
+	color: #aaa;
+	cursor: default;
+}
+.icon-container [class^="ti-"], 
+.icon-container [class*=" ti-"],
+.icon-container [class^="fa-"], 
+.icon-container [class*=" fa-"] {
+	font-size: 18px;
+	color: #333;
+	padding-right: 10px;
+	-webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.icon-container:hover {
+	background-color: #eee;
+	border-radius: 3px;
+}
+.icon-name {
+	color: #aaa;
+	font-size: .8em;
+	-webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}

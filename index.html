@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This is the online documentation for Navian - Multi-Purpose WordPress Theme by THEMELOGI. All intended to help you on how to install and using the Theme">
+	<title>Navian - Responsive Multi-Purpose WordPress Theme</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/doc.css" media="all">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+</head>
+
+<body class="documenter-project-pixel">
+	<!-- Document sidebar -->
+	<div id="documenter_sidebar">
+		<h1 class="documenter-title" style="overflow: hidden;"><img style="display:block; padding-top: 25px;" alt="Navian" src="assets/images/logo.png" /></a>Navian Documentation</h1>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">01. Introduction</a></li>
+			<li><a href="#theme_installation">02. Theme Installation</a></li>
+			<li><a href="#demo_import">03. Import Demo</a></li>
+			<li><a href="#setup_home">04. Setting up the Homepage</a></li>
+			<li><a href="#creating_menus">05. Setting up the Menu</a></li>
+			<li><a href="#blog_posts">06. Setting up your Blog</a></li>
+			<li><a href="#page_creation">07. Setting up the Page</a></li>
+			<li><a href="#studio">08. Navian Studio</a></li>
+			<li><a href="#page_options">09. Page Options</a></li>
+			<li><a href="#header_title">10. Setting Up The Page Header</a></li>
+			<li><a href="#onepage">11. Setting up a One Page site</a></li>
+			<li><a href="#portfolio">12. Setting up the Portfolio</a></li>
+			<li><a href="#custom_post_types">13. Team, Clients & Testimonials </a></li>
+			<li><a href="#widget_sidebar">14. Widget, Shortcode & Sidebar</a></li>
+			<li><a href="#woocommerce">15. WooCommerce</a></li>
+			<li><a href="#theme_customization">16. Theme Customization</a></li>
+			<li><a href="#knowledge">17. License & Knowledge</a></li>
+			<li><a href="#log">18. Version Log</a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div id="documenter_content">
+
+	<!-- Cover -->
+	<section id="documenter_cover">
+		<h1>Welcome to Navian Documentation</h1>
+		<hr>
+		<p>Thank you for purchasing <strong>Navian WordPress Theme</strong>. In this document you will find information on how to install, manage and update your theme, as well as create content, install plugins, import Demo data etc.</p>
+		<p>If you have any questions that are beyond the scope of this help file, feel free to post them in our dedicated <a href="http://www.themelogi.com/tickets">support forum</a>.</p>
+		<a href="http://demo.themelogi.com/navian/" target="_blank">Live Demo</a> | <a href="http://themeforest.com/cart/add_items?ref=THEMELOGI&item_ids=20527137" target="_blank">Buy another License</a>
+		<br><br>
+		<p class="caption aligncenter"><img alt="Homepage Layout" src="assets/images/01_preview.jpg" /></p>
+	</section>
+
+	<!-- Theme Installation -->
+	<section id="theme_installation">
+		<div class="page-header"><h1>Theme Installation</h1><hr class="notop"></div>
+		
+		<p><strong>The Navian theme package contains following folders and files:</strong></p>
+		<ul class="filelist">
+		    <li class="folder">Documentation</li>
+	        <li class="folder">Plugins</li>
+	        <li class="folder">SampleData</li>
+	        <li class="zip">navian</li>
+		    <li class="zip">navian-child</li>
+	    </ul>
+
+	    <div class="alert"><p><a href="http://codex.wordpress.org/Child_Themes">Child themes</a> are the recommended way of making modifications to a theme. But in case you want to install the demo content, please active the parent theme before importing data for the best result.</p></div>
+
+	    <div class="alert"><p>Before start using the theme, a working version of WordPress must be installed. If you need help on installing WordPress, please follow the instructions in <a href="http://codex.wordpress.org/Installing_WordPress" target="_blank">WordPress Codex</a>.</p></div>
+
+		<p>The theme can be installed in localhost, or via FTP. The <strong>navian</strong> file is the Installable WordPress Theme.</p>
+
+		<div class="section-title">Install Theme via WordPress</div>
+		<ol class="none-list">
+			<li><span class="highlight">Step 1.</span>Log in to the WordPress Administration Panels.</li>
+			<li><span class="highlight">Step 2.</span>Select the <strong>Appearance > Themes > Add New</strong>.</li>
+			<li><span class="highlight">Step 3.</span>Use the <strong>Upload Theme</strong> button to upload a zipped copy of Navian Theme.</li>
+			<li><span class="highlight">Step 4.</span>Go to <strong>Appearance > Themes</strong> and activate the theme.</li>
+		</ol>
+		<div class="section-title">Install Theme via FTP</div>
+		<ol class="none-list">
+			<li><span class="highlight">Step 1.</span>Log into your hosting via an FTP software.</li>
+			<li><span class="highlight">Step 2.</span>Unzip the installable file and upload into <code>wp-content/themes</code> folder.</li>
+			<li><span class="highlight">Step 3.</span>Go to <strong>Appearance > Themes</strong> and activate the theme.</li>
+		</ol>
+
+		<div class="section-title">Troubleshooting</div>
+		<ol class="none-list">
+			<li><strong>Theme is missing the style.css stylesheet error</strong>
+			<p>This is a common issue that can occur when installing a WordPress themes. For the details of solution, please have a look at <a href="https://help.market.envato.com/hc/en-us/articles/202821510-Theme-is-missing-the-style-css-stylesheet-error" target="_blank" rel="nofollow">this article</a>.</p></li>
+			<li><strong>The message: "Are you sure you want to do this? Please try again"</strong>
+			<p>If you are installing your theme from the WordPress theme installer, but get the message above, most likely your web server is configured that only allow a certain size ZIP file to be uploaded via WP Admin. In this case, you can simply unzip the installable theme file and install Theme via FTP.</p></li>
+			<li><strong>The message: "Allowed memory size exhausted", "Internal server error" or the site crashes</strong>
+			<p>This is most likely due to your server resources being limited by its configuration. For the details of solution, please have a look at our <a href="http://www.themelogi.com/tickets/topic/faq/" target="_blank">FAQs page</a>.</p></li>
+		</ol>
+
+		<div class="section-title">Install Plugins</div>
+		<p>After you install the theme, you should see a list of suggested plugins at the top of the WordPress dashboard.<br> If you already closed it out, you can go to <code>Plugins</code> folder of the Theme package instead to activate plugins.</p>
+		<p class="caption"><img src="assets/images/wa_plugin_required.png"></p>
+
+	</section>
+
+	<!-- Demo Content Import -->
+	<section id="demo_import">
+		<div class="page-header"><h1>Import Demo</h1><hr class="notop"></div>
+		<p>Once you have installed all theme Plugins you can import the Demo Content. By installing the demo content, your theme will look like the one you see on our demo. This action will let you understand how the theme works by allowing you to modify a content that is already there rather than creating it from scratch.</p>
+
+		<div id="oneclick_import" class="section-title">One-Click Demo Import</div>
+		<br>
+		<div class="alert"><p>Please click on the Import button only once and wait, it can take few minutes. Please be patient and DO NOT close the browser or navigate away. The import procedure can take up to 15mins on slow servers and you will see the messages when the import is done.</p></div>
+		<ol class="none-list">
+			<li><span class="highlight">Step 1.</span>Go to <strong>Appearance > Intall Demo</strong> in your Dashboard.</li>
+			<li><span class="highlight">Step 2.</span>Read the message and click on <strong>Import</strong> button.
+			<p class="caption"><img src="assets/images/wa_import1click.png"></p></li>
+			<li><span class="highlight">Step 3.</span>In case the One-Click Import did not work or any other missing data, you can try to re-install demo content via <strong>Advanded demo content import</strong> option.
+			<p class="caption"><img src="assets/images/wa_import2click.png"></p></li>
+			<li><span class="highlight">Step 4.</span>Sit back and let the importer run. The process take up to 15mins on slower servers, these times depend on the server that hosts your WordPress site.
+			<p class="caption"><img src="assets/images/import_done.png"></p></li>
+		</ol>
+
+		<div id="manually_import" class="section-title">Manual Demo Import</div>
+		<p>If you receive any errors during the One-Click Demo Import process, try running the import manually as described in the section below.</p>
+		<ol class="none-list">
+			<li><span class="highlight">Step 1.</span>Go to <strong>Tools > Import</strong> in your Dashboard.</li>
+			<li><span class="highlight">Step 2.</span>Click on <strong>WordPress</strong> then <strong>Choose file</strong> and locate within the Navian package you unzipped: <code>SampleData/navian-demo.xml</code>. Click <strong>Upload and Import</strong>. Then you can also check the box <strong>Download and import file attachments</strong> to import attachment files.</li>
+			<li id="widgets_import"><span class="highlight">Step 3.</span>To import the sample widgets, you can use the <a href="https://wordpress.org/plugins/widget-importer-exporter/" target="_blank">Widget Importer & Exporter</a> plugin. Once install the plugin, you can go to <strong>Tools > Widget Import/Export</strong> and uploading the .wie file: <code>SampleData/navian-widget.wie</code>. The results are shown in a nicely formatted table with an explanation of what happened with each sidebar and widget.</li>
+			<li><span class="highlight">Step 4.</span>To import the sample sliders, please make sure you've activated the Revolution Slider plugin. Then you can go to your <strong>Revolution Slider</strong> tab in WP Admin, click the <strong>Import Slider</strong> button, and locate within the Navian package you unzipped: <code>SampleData/Sliders</code> folder, then choose the <code>.zip</code> file of the slider you'd like to import.</li>
+		</ol>
+
+		<div id="manually_import" class="section-title">Individual Demo Import</div>
+		<p>The Navian theme comes with <a href="#studio">Navian Studio</a> allows you to import an individual demo homepage as below:</p>
+		<ol class="none-list">
+			<li><span class="highlight">Step 1.</span>Create a new page via <strong>Pages > Add New</strong> in your Dashboard.</li>
+			<li><span class="highlight">Step 2.</span>Click on <strong>Navian Studio</strong> icon button. Then you can choose the homepage you wish to import to your current page.</li>
+			<li><span class="highlight">Step 3.</span>After that, you may want to go to each elements, and replace your own content/image in the element settings.</li>
+		</ol>
+
+		<div id="common_issue" class="section-title">Common Issues & Questions</div>
+
+		<p><strong><span class="highlight">1.</span>Maximum execution time, Internal Server Error, TLG Framework error or the site crashes</strong></p>
+		<p>This is most likely due to your server resources being limited by its configuration – most commonly these are: max_execution_time and memory_limit. In this case you will need to increase the WordPress Memory Limit regardless of <a href="http://codex.wordpress.org/Editing_wp-config.php#Increasing_memory_allocated_to_PHP" target="_blank">server memory settings</a>. For the details of solution, please have a look at <a href="http://www.themelogi.com/tickets/topic/faq/" target="_blank">our FAQs</a> page in "Question 1".</p>
+
+		<p id="duplicated_menu"><strong><span class="highlight">2.</span> Missing menus or duplicated menu items</strong></p>
+		<p>If you have duplicated menu items after import the Demo Contents. It's due to the time out while reading response from server, the importing progress then automatically re-start and you may get duplicated menu items. To fix this issue, please follow the steps here:</p>
+		<ol class="none-list">
+			<li>1. Go to <strong>Appearance > Menus</strong> in your Dashboard and delete the duplicated menus.</li>
+			<li>2. Go to <strong>Tools > Import</strong>.</li>
+			<li>3. Click on <strong>WordPress</strong> then <strong>Choose file</strong> and locate within the Navian package you unzipped: <code>SampleData/navian-menu.xml</code>. Click <strong>Upload and Import</strong>.</li>
+			<li>4. Go to <strong>Appearance > Menus</strong> and click the <strong>Manage Locations</strong> button at the top. Select a Menu for the <strong>Primary Navigation</strong> and save it.</li>
+			<li>5. Please note that, you can also change the menu for the individual page in the <strong>Menu Settings</strong> section at bottom of the Page editor.</p></li>
+		</ol>
+
+		<p><strong><span class="highlight">3.</span> Missing the contact forms</strong></p>
+		<p>If you want to import the demo content for <a href="https://wordpress.org/plugins/contact-form-7/">Contact Form 7</a> plugin, make sure to install & activate it before running the Importer.</p>
+		<ol class="none-list">
+			<li>1. Go to <strong>Tools > Import</strong>.</li>
+			<li>2. Click on <strong>WordPress</strong> then <strong>Choose file</strong> and locate within the Navian package you unzipped: <code>SampleData/navian-contactform.xml</code>. Click <strong>Upload and Import</strong>.</li>
+			<li>3. Go to <strong>Dashboard > Contact</strong> to see all the contact forms available in Navian live demos.</li>
+		</ol>
+
+		<p><strong><span class="highlight">4.</span>Duplicated demo content</strong></p>
+
+		<p>To get rid of the duplicated demo content you can using the <a href="https://wordpress.org/plugins/wordpress-reset/" target="_blank">WordPress Reset</a> plugin.</p>
+
+		<p><strong><span class="highlight">5.</span>Image Sizes</strong></p>
+
+		<ul>
+			<li>Blog: any size</li>
+			<li>Portfolio: 1200x900px</li>
+			<li>Portfolio Detail: any size</li>
+			<li>Full Width Sections: 1920x1080px</li>
+			<li>Shop Page: at least 547px wide</li>
+		</ul>
+
+		<p><strong><span class="highlight">6.</span>Wrong image dimensions</strong></p>
+
+		<p>If you change the image dimensions or you got any issues about image dimensions, you may need to <a href="https://wordpress.org/extend/plugins/regenerate-thumbnails/" target="_blank" rel="nofollow">regenerate your thumbnails</a>.</p>
+
+	</section>
+
+	<!-- Setting up the HomePage -->
+	<section id="setup_home">
+		<div class="page-header"><h1>Setting up the Home Page</h1><hr class="notop"></div>
+
+		<div class="section-title">1. For a fresh new WordPress site (without demo content)</div>
+
+		<p>To set up the Home Page, please go to your Dashboard and navigate to <strong>Pages > Add New</strong>. Choose a Title like "Home", add your content and click the <strong>Publish</strong> button. </p>
+
+		<p>Then Go to <strong>Settings > Reading</strong>. Select <strong>A static page</strong>, choose a Home page for <strong>Front Page</strong> and choose a Blog page for <strong>Posts page</strong>.</p>
+
+		<p class="caption"><img src="assets/images/wa_page_reading.jpg"></p>
+
+		<div class="section-title">2. After importing Navian demo content</div>
+
+		<p>After the importing process, you will got all the sample images and demo content include: homepages, pages, blog posts, portfolio, products, menus, contact form, team member, client, testimonial..</p>
+		<p>The entire demos as you seen in our live demo is the <strong>Pages</strong> that you can see in your <strong>Dashboard > Pages</strong>.</p>
+		<p>So let me explains the steps to choose <a href="http://demo.themelogi.com/navian/home/gym-fitness/">Gym & Fitness</a> demo as your Homepage:</p>
+
+		<p><strong>Step 1: </strong>Go to your <strong>Dashboard > Pages</strong>, view all the available homepages.</p>
+		<p class="caption"><img src="assets/images/all_demo.png"></p>
+		<p class="caption"><img src="assets/images/wa_pages.png"></p>
+
+		<p><strong>Step 2: </strong>To make <strong>Gym & Fitness</strong> as your new Homepage, please go to <strong>Dashboard > Settings > Reading</strong>. Select A static page, choose a page for Front Page and choose a Blog page for Posts page.</p>
+		<p class="caption"><img src="assets/images/wa_home.png"></p>
+
+		<p><strong>Step 3: </strong>Open up the <strong>Gym & Fitness</strong> page editor, then scroll down to bottom of the page to review all the individual Page Options (Header Layout, Footer Layout, Fonts, Colors,...) that using in <strong>Gym & Fitness</strong> demo.</p>
+		<div class="alert"><p>You can read more detail about Page Option in <a href="#page_options">this section</a>.</p></div>
+		<p class="caption"><img src="assets/images/wa_home_option.png"></p>
+
+		<p><strong>Step 4: </strong>Open up a new tab in your browser, then go to <strong>Dashboard > Appearances > Customize</strong>, and apply all the options (with NOT DEFAULT value) of <strong>Gym & Fitness</strong> page (individual settings) above to the corresponding options on Customize panel (global settings).</p>
+
+		<p><strong>Step 4: </strong>Remember to reset the permalinks in <strong>Settings > Permalinks</strong> as you wish.</p>
+		
+		<p><strong>Step 5: </strong>Done! Now you can go to your site and see <strong>Gym & Fitness</strong> as your new Homepage, and all other pages of the entire site will now have a same style as in the <strong>Gym & Fitness</strong> demo page.</p>
+		
+	</section>
+
+	<!-- Setting up the Menu -->
+	<section id="creating_menus">
+		<div class="page-header"><h1>Setting up the Menu</h1><hr class="notop"></div>
+		<div class="section-title">Defining a Menu</div>
+		<p>You must define a menu before you can add items to it.</p>
+		<ul>
+			<li>Navigate to <strong>Appearance > Menus</strong>.</li>
+			<li>Select Create a new menu at the top of the page.</li>
+			<li>Enter a name for your new menu in the Menu Name box.</li>
+			<li>Click the <strong>Create Menu</strong> button.</li>
+		</ul>
+		<p class="caption"> <img src="assets/images/wa_menu_create.png"></p>
+		<div class="section-title">Adding Items to a Menu</div>
+		<ul>
+			<li>Locate the pane entitled Pages.</li>
+			<li>Select the Pages that you want to add by clicking the checkbox next to each Page's title.</li>
+			<li>Click the <strong>Add to Menu</strong> button located at the bottom of this pane to add your selection(s) to the menu that you created in the previous step.</li>
+			<li>Click the <strong>Save Menu</strong> button once you've added all the menu items you want.</li>
+		</ul>
+		<div class="section-title">Assign your Menu</div>
+		<p>Now you only need to assign your menu to your desired Menu Location. To do that, click the <strong>Manage Locations</strong> button at the top, select your menu for one of the Primary locations and click <strong>Save Changes</strong>.</p>
+		<p class="caption"><img src="assets/images/wa_menu_primary.png"/> </p>
+
+		<div class="section-title" id="megamenu">Mega Menu</div>
+		<p>The Mega Menu extension gives the end-user the ability to construct advanced navigation menus. You can create one in the same way you create a regular sub menu. However, you have to choose the option of <strong>Enable Mega Menu</strong> to activate the mega-menu. The next level of submenu will be mega menu each column's title.</p>
+		<p><strong>Menu badge & subtitle:</strong></p>
+		<p class="caption"><img src="assets/images/wa_megamenu.png"/> </p>
+		<p class="caption"><img src="assets/images/wa_menu_badge.png"/> </p>
+		<p class="caption"><img src="assets/images/wa_menu_badge2.png"/> </p>
+
+		<p><strong>Hide megamenu column titles:</strong></p>
+		<p class="caption"><img src="assets/images/wa_hidetitle_menu.png"/> </p>
+
+		<p><strong>Menu badge custom color:</strong></p>
+		<p>You can change the default badge color in <strong>Appearances > Customize > Color > Menu Badge Color</strong>. Also, the theme provides some preset badge colors that you can use via CSS Classes field as below:</p>
+		<p class="caption"><img src="assets/images/badge_color.png"/> </p>
+		<p><strong>Supported preset badge color class:</strong></p>
+		<p><span style="background: #49c5b6; color: #fff; padding: 5px 10px;border-radius: 3px;">badge-primary</span>
+		<span style="background: rgba(66, 168, 15, 0.5); color: #fff; padding: 5px 10px;border-radius: 3px;">badge-success</span>
+		<span style="background: rgba(213,37,23,.5); color: #fff; padding: 5px 10px; border-radius: 3px;">badge-warning</span>
+		<span style="background: #eb4c49; color: #fff; padding: 5px 10px;border-radius: 3px;">badge-danger</span>
+		<span style="background: #f96f39; color: #fff; padding: 5px 10px;border-radius: 3px;">badge-hot</span>
+		<span style="background: #65c74e; color: #fff; padding: 5px 10px;border-radius: 3px;">badge-info</span>
+		<span style="background: #8b8b92; color: #fff; padding: 5px 10px;border-radius: 3px;">badge-gray</span>
+		<span style="background: #00bcd4; color: #fff; padding: 5px 10px;border-radius: 3px;">badge-sky</span></p>
+
+		<div class="section-title">Menu Image (Mega Menu only)</div>
+		<p>To use a menu item like an image background, please use the <strong>Set Image</strong> button as the screenshot here (You'll need to Save changes on Menus to see the correct thumbnail. Also, if you want to remove the menu image, simply remove the Menu Image Id).</p>
+		<p class="caption"><img src="assets/images/menu_image.png"/> </p>
+		<p class="caption"><img src="assets/images/menu_image_admin.png"/> </p>
+
+		<div class="section-title">Menu Cusomization</div>
+		<p id="menu_dark"><strong>1. Menu Dark Schema (default):</strong></p>
+		<p>Appearances > Customize > Colors:</p>
+		<p class="caption"><img src="assets/images/wa_menu_dark_color.png"/> </p>
+		<p class="caption"><img src="assets/images/wa_menu_dark_demo.png"/> </p>
+
+		<p id="menu_light"><strong>2. Menu Light Schema:</strong></p>
+		<p class="caption"><img src="assets/images/wa_menu_light_color.png"/> </p>
+		<p class="caption"><img src="assets/images/menu_image.png"/> </p>
+
+	</section>
+
+	<!-- Blog Posts -->
+	<section id="blog_posts">
+		<div class="page-header"><h1>Setting up your Blog</h1><hr class="notop"></div>
+		<p>Posts are the entries that display in reverse chronological order on your home page. In contrast to pages, posts usually have comments fields beneath them and are included in your site's RSS feed.</p>
+		<p>To write a post:</p>
+		<ul>
+			<li>Log in to your Dashboard.</li>
+			<li>Click the <strong>Posts</strong> tab</li>
+			<li>Click the <strong>Add New</strong> sub-tab.</li>
+			<li>Start filling in the blanks: enter your post title in the upper field, and enter your post body content in the main post editing box below it.</li>
+			<li>As needed, select a category, add tags, and make other selections from the sections below the post.</li>
+			<li>When you are ready, click <strong>Publish</strong>.</li>
+		</ul>
+		<p class="caption"> <img src="assets/images/wa_menu_blog_list.png"></p>
+		<p class="caption"> <img src="assets/images/wa_post_formats.jpg"></p>
+
+		<div class="section-title">1. Standard post type</div>
+		<p>This is default styling for the WordPress theme. Simply add new post or edit post and select post format as <strong>Standard</strong>.</p>
+		<p class="caption"> <img src="assets/images/wa_wdit_post.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_post_header.png"></p>
+		<p>To change the page title background overlay color, please go to your Dashboard > Apeparances > Customize > System, as in the screenshot here: </p>
+		<p class="caption"> <img src="assets/images/page_title_color.png"></p>
+		<p>For more details about the theme settings, please have a look at the <a href="#theme_customization">Theme Customization</a> section.</p>
+		<div class="alert"><p>For a perfect fit the header image should be at least 1920px wide.</p></div>
+
+		<div class="section-title">2. Gallery</div>
+		<p>This format will show a thumbnail image from your posts, as well as an excerpt of the gallery. To have this post format, you need to add gallery for the post by clicking on <strong>Add Media > Create A Gallery</strong> and press <strong>Insert Gallery</strong> button in order to insert the gallery into the post.</p>
+		<p class="caption"> <img src="assets/images/wa_edit_gallery.png"></p>
+		<p class="caption"> <img src="assets/images/gallery_edit.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_post_gallery.png"></p>
+
+		<div class="section-title">3. Audio</div>
+		<p>This format will show a featured audio as cover of the post.</p>
+		<p>You can paste your URL that should be embedded. Supports services listed at <a target="_blank" href="http://codex.wordpress.org/Embeds">http://codex.wordpress.org/Embeds.</a></p>
+		<p class="caption"> <img src="assets/images/wa_audio_text.png"></p>
+		<p>Sample Audio embedded code: <pre>[audio src="http://wpthemetestdata.files.wordpress.com/2008/06/originaldixielandjazzbandwithalbernard-stlouisblues.mp3"]</pre></p>
+		<p>You can switch the block editor into HTML mode to add the embedded code as in the screenshot here:</p>
+		<p class="caption"> <img src="assets/images/post_html.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_post_audio.png"></p>
+
+
+		<div class="section-title">3. Video</div>
+		<p>This format will show a featured video as cover of the post.</p>
+		<p>You can paste your URL that should be embedded. Supports services listed at <a target="_blank" href="http://codex.wordpress.org/Embeds">http://codex.wordpress.org/Embeds.</a></p>
+		<p class="caption"> <img src="assets/images/wa_video_embed.jpg"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_post_youtube.png"></p>
+
+		<h3>5. Blockquote</h3>
+		<p>This format will show a quote with a beautiful style from your posts.</p>
+		<p class="caption"> <img src="assets/images/wa_edit_quote_text.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_post_quote.png"></p>
+
+		<div class="section-title">Blog Pages</div>
+		<p>There are 2 types of blog pages: "Default Archive Blog Page" & "Custom Page with Blog element" in page builder.</p>
+		<p><strong>1. Default Archive Blog Page</strong></p>
+		<p>You can create a new page named for example: "Blog", then go to your Dashboard > Settings > reading, and set your default <strong>Posts page</strong> as "Blog".</p>
+		<p class="caption"> <img src="assets/images/post.png"></p>
+		<p>After that, you can go to your <strong>Dashboard > Appearances > Customize > Blog</strong>, to change the default blog layout & bog header in there.</p>
+		<p class="caption"> <img src="assets/images/post_c.png"></p>
+		<div class="alert"><p>Note: You can't change the page content of a default Blog/Shop/Portfolio archive page in the page editor. To edit the layout & header of the default Blog/Shop/Portfolio archive page, please go to your Dashboard > Appearances > Customize > Blog/Shop/Portfolio.</p></div>
+
+		<p><strong>2. Custom Page with Blog element</strong></p>
+		<p>In this case, you can create your blog page with the content you wish, you can just add a new page, then add a Blog element and choose the blog layout. You can also add all the element you wish in your own blog page.</p>
+		<p class="caption"> <img src="assets/images/blog_e.png"></p>
+		<p>Also, please note that, if yoou choose the Blog Layout with Sidebar, you'll need to set the Row stretch as "Stretch row" as in the screenshot below:</p>
+		<p class="caption"> <img src="assets/images/wa_row_full.png"></p>
+
+	</section>
+
+	<!-- Page & Post Creation -->
+	<section id="page_creation">
+		<div class="page-header"><h1>Setting up the Page</h1><hr class="notop"></div>
+		<p>Navian uses a highly customized version of the popular WPBakery Page Builder (Visual Composer) plugin with some default short codes and some customized short codes. In the custom page builder, you can easily create complex layouts. Not all of the original WPBakery Page Builder short codes are available with this theme or were replaced by our own ones.</p>
+
+		<p>Building pages is very easy in this theme as you will use the WPBakery Page Builder's builder and all the shortcodes comes with it. Follow these simple steps to create a Page with Navian:</p>
+
+		<ul>
+			<li>Go to <strong>Pages > Add New</strong> in order to add a new page.</li>
+			<li>Switch to the <strong>WPBakery Page Builder</strong> in order to bring the visual page builder up.
+				<p class="caption"> <img src="assets/images/page_editor.png"></p>
+				<p class="caption"> <img src="assets/images/page_editor_b.png"></p></li>
+			<li>Adding page content by clicking on the Plus button or <strong>Add Element</strong>.
+				<p class="caption"> <img src="assets/images/wa_vc_add_element.jpg"></p></li>
+			<li>The Add Element popup appears, click on the Row element to create a section on your page. <br>You can split your Rows into Columns, and place various elements into your rows, set Row layout, background and effects etc.
+				<p class="caption"> <img src="assets/images/wa_vc_add_column.jpg"></p>
+			</li>
+			<li>Here is the list of Navian elements available for use in page content. Simnply click on the element you want and change the settings in there.
+			<p class="caption"> <img src="assets/images/visual-element.jpg"></p>
+			</li>
+		</ul>
+		
+		<div class="section-title">Row background image</div>
+		<p class="caption"> <img src="assets/images/wa_bg.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_bg_f.png"></p>
+
+		<div class="section-title">Row overlay background</div>
+		<p class="caption"> <img src="assets/images/wa_bg_g.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_bg_g_f.png"></p>
+
+		<div class="section-title">Row video background</div>
+		<p class="caption"> <img src="assets/images/wa_bg_v.png"></p>
+
+		<div class="section-title">Row stretch</div>
+		<ul>
+			<li><strong>Default</strong>: Follow your regular wrapper content width and the content within the Row.</li>
+			<li><strong>Stretch Row</strong>: Stretches row, but leave content in previous width.</li>
+			<li><strong>Stretch Row and Content</strong>: Leaves default Bootstrap paddings of 15 pixels on the left and right side of row</li>
+			<li><strong>Stretch Row and Content (no paddings)</strong>: Remove default Bootstrap padding of 15 pixels as well.</li>
+		</ul>
+		
+		<div class="section-title">Row extra class name</div>
+		<p>You can see our CSS Helper classes below here:</p>
+		<ul>
+			<li><strong>color-white</strong>: Set text color in white.</li>
+			<li><strong>uppercase</strong>: Make the text to upper.</li>
+			<li><strong>text-left</strong>: Text alignment left.</li>
+			<li><strong>text-right</strong>: Text alignment right.</li>
+			<li><strong>text-center</strong>: Text alignment center.</li>
+		</ul>
+
+		<div class="section-title">Page Front-End Editor</div>
+		<p>Build responsive website and manage your content easily with intuitive front end WordPress editor.</p>
+		<ul>
+			<li>Add and drag elements around the screen to quickly build unique layouts on your WordPress website.</li>
+			<li>Create responsive pages with brand new responsive design controls.</li>
+		</ul>
+		<p><strong>WPBakery Page Builder</strong> front end editor allows you quickly switch between different devices to check how your content looks on tablet or mobile devices.</p>
+		<p class="caption"> <img src="assets/images/wa_vc_frontend.png"></p>
+	</section>
+
+	<!-- Studio -->
+	<section id="studio">
+		<div class="page-header"><h1>Navian Studio</h1><hr class="notop"></div>
+		
+		<p>A true 'What You See Is What You Get' experience with a live Frontend editor. Build any layout you can imagine with truly 1-click section template imports. You can add text, parallax images, galleries, create map, contact form and more with an intuitive and easy to use drag and drop editor for WordPress.</p>
+
+		<div class="alert"><p>Note: Since this is shortcode pre-defined import only (not importing the images), so in some templates, you may have to add your own images to make it show as in the screenshots.</p></div>
+
+		<p class="caption"> <img src="assets/images/template_button.png"></p>
+		<p class="caption"> <img src="assets/images/template.png"></p>
+	</section>
+
+	<!-- Page Options -->
+	<section id="page_options">
+		<div class="page-header"><h1>Page Options</h1><hr class="notop"></div>
+
+		<p>The theme comes with 2 theme options ("Appearances > Customize" & "Page options at bottom of the page/post")</p>
+
+		<p>So in case you see the customize option doesn't change as in "Appearances > Customize", please just have a look at the "Page options at bottom of the page/post".</p>
+
+		<p>It's very simple indeed, just 2 points that you need to know to use our Theme Options.</p>
+
+		<p>1. There are global options that affect you entire site in "Appearances > Customize".</p>
+
+		<p>2. There are individual options (Page Options) that affect only that page or post in "Page options at bottom of the page/post"</p>
+
+		<div class="alert"><p>The Page Options below of the page/post editor is the first priority. Otherwise, Navian will use the global setting at <a href="#theme_customization">Theme Customization</a>.</p></div>
+
+		<div class="section-title">Page Layout</div>
+		<ul>
+			<li><strong>Site Layout</strong>: Wide, Boxed, Frame</li>
+			<li><strong>Container Layout</strong>: Standard, Small</li>
+			<li><strong>Header Layout</strong>: Standard, Transparent, Center, Off-canvas, Vertical Left/Right,..</li>
+			<li><strong>Footer Layout</strong>: Standard, Basic, Modern, Copyright in Dark & Light version</li>
+		</ul>
+		<p class="caption"> <img src="assets/images/wa_page_setting_1.png"></p>
+
+		<div class="section-title">Default Page Title</div>
+		<p></p>
+		<div class="alert"><p>Note: If you are using Single/Slider Header WPBakery Page Builder element, please set Page Title Layout to "No Title" to remove the default title.</p></div>
+		<ul>
+			<li><strong>Page Title Layout</strong>: Center, Center Background, Left, Left Background, Parallax, No Title.</li>
+			<li><strong>Page Title</strong>: This will overwrite the default title.</li>
+			<li><strong>Page Title Sub-title</strong>: A sub-title for the current page.</li>
+			<li><strong>Page Title Lead-title</strong>: A lead-title for the current page.</li>
+			<li><strong>Page Title Background Type</strong>: Using the default Featured Image or Custom Image for the default Page Title</li>
+			<li><strong>Custom Background Image</strong>: The image pattern for header background.</li>
+			<li><strong>Hide Breadcrumbs?</strong>: Hide the breadcrumbs in page title.</li>
+		</ul>
+		<p class="caption"> <img src="assets/images/wa_page_setting_2.jpg"></p>
+
+		<div class="section-title">Menu Settings</div>
+		<ul>
+			<li><strong>Selected Menu</strong>: Here you can choose the menu for the current individual page.</li>
+			<li><strong>Header Hover Menu Effect</strong>: Here you can choose the hover effect for menu: Line, Background, None.</li>
+			<li><strong>Header Submenu Hover Color</strong>: Here you can choose the hover color for menu: Default, Primary.</li>
+			<li><strong>Header Megamenu Divider Color</strong>: Here you can choose the divider color for menu: Light, Dark.</li>
+			<li><strong>Submenu Background Color</strong>: Here you can choose the background color for the submenu.</li>
+			<li><strong>Submenu Color</strong>: Here you can choose the color for submenu item.</li>
+			<li><strong>Enable Boxed Header</strong>: Check this option to enable boxed header.</li>
+			<li><strong>Hide Header Cart</strong>: Check this option to hide header cart icon.</li>
+			<li><strong>Hide Header Search</strong>: Check this option to hide header search icon.</li>
+			<li><strong>Hide Header Language</strong>: Check this option to hide header language icon.</li>
+		</ul>
+		<p class="caption"> <img src="assets/images/wa_page_setting_3.jpg"></p>
+
+		<div class="section-title">Colors & Logo Settings</div>
+		<p></p>
+		<ul>
+			<li><strong>Primary Color</strong>: The selected color will be applied on default primary color.</li>
+			<li><strong>Primary Gradient Color</strong>: The selected color will be used with "Primary Color", to create gradient primary color for text, icon...</li>
+			<li><strong>Footer Background Color</strong>: The selected color will be applied on default footer background color.</li>
+			<li><strong>Footer Color</strong>: The selected color will be applied on default footer color.</li>
+			<li><strong>Footer Link Color</strong>: The selected color will be applied on default footer link color.</li>
+			<li><strong>Logo Image</strong>: Logo for the current individual page.</li>
+			<li><strong>Logo Image Light</strong>: Logo light version for the current individual page.</li>
+		</ul>
+		<p class="caption"> <img src="assets/images/wa_page_setting_4.jpg"></p>
+
+		<div class="alert"><p>Note 1: This section will override the settings configured in "Appearance > Customize" for this current individual page.</p><p>Note 2: All the settings above is available in "Appearance > Customize", if you only need a website with same style/color/font family,... for every pages, just go ahead to "Appearance > Customize" section, otherwise you can change the setting above for individual pages.</p></div>
+	</section>
+
+	<!-- Setting Up The Page Header -->
+	<section id="header_title">
+		<div class="page-header"><h1>Setting Up The Page Header</h1><hr class="notop"></div>
+		<p>Navian comes with multiple page header layout options that you can choose for your project.</p>
+		<p>The Navian Page Header is a combination between <strong>HEADER MENU</strong> and <strong>HEADER PAGE TITLE</strong>.</p>
+
+		<div class="section-title">1. HEADER PAGE TITLE</div>
+
+		<p>Navian comes with 4 types of header page title, you can choose one of them for your page title layout. Please read below for detailed on how to set it up.</p>
+		
+		<div class="section-title">Page Title Type 1: Default Page Title</div>
+		<p></p>
+		<p class="caption"><img src="assets/images/menu_header.png"></p>
+		<div class="alert">
+			<p>1. If you are going to use Single / Slider Header element for your Page Title, please set the <strong>Page Title Layout</strong> to <strong>No Title</strong> to remove the default Page Title.</p>
+			<p>2. You can change/disable the default overlay background color in your <strong>Dashboard > Appearances > Customize > System > Page Title Overlay Color</strong>.</p>
+		</div>
+		<p>You can find the <strong>Page Title Layout</strong> option at the bottom of the page/post editor:</p>
+		<p class="caption"><img src="assets/images/wa_page_title.png"></p>
+
+		<div class="section-title">Page Title Type 2: Single Header element</div>
+		<p></p>
+		<p class="caption"><img src="assets/images/menu_header_element.png"></p>
+		<div class="alert"><p>If you are going to use Single Header element for your Page Title, please set the <strong>Page Title Layout</strong> to <strong>No Title</strong> to remove the default Page Title.</p></div>
+		<p>You can go to your page editor, click on 'plus' button, and then click on Single Header:</p>
+		<p class="caption"><img src="assets/images/wa_new_element.png"></p>
+		<p class="caption"><img src="assets/images/wa_single_header.png"></p>
+		<p>NOTE: Please set the Row stretch layout to <strong>Stretch row</strong> option in order to make the page header full width</p>
+		<p class="caption"><img src="assets/images/wa_row_full.png"></p>
+		<p>And then you can add your title information, background, buttons,... to the element:</p>
+		<p class="caption"><img src="assets/images/wa_single_header_s.png"></p>
+		<p class="caption"><img src="assets/images/wa_single_header_v.png"></p>
+
+		<div class="section-title">Page Title Type 3: Slider Header element</div>
+		<p></p>
+		<div class="alert"><p>NOTE 1: If you are going to use Slider Header element for your Page Title, please set the <strong>Page Title Layout</strong> to <strong>No Title</strong> to remove the default Page Title.</p><p>NOTE 2: In order to make the Slider Header works, you'll need to add at least 2 Slider Header items.</p><p>NOTE 3: Please set the <strong>Row stretch</strong> layout to <strong>Stretch row</strong> option in order to make the page header full width.</p></div>
+		<p>You can go to your page editor, click on 'plus' button, and then click on Slider Header:</p>
+		<p class="caption"><img src="assets/images/wa_slider_header.png"></p>
+		<p>And then you can add your slider item, title information, background, buttons,... to the element:</p>
+		<p class="caption"><img src="assets/images/wa_slider_header_s.png"></p>
+		<p class="caption"><img src="assets/images/wa_slider_header_v.png"></p>
+
+		<div class="section-title">Page Title Type 4: Revolution Slider element</div>
+		<p></p>
+		<div class="alert"><p>NOTE: Please set the Row stretch layout to Stretch row option in order to make the page header full width.</p></div>
+		<p>You can go to your page editor, click on 'plus' button, and then click on Revolution Slider:</p>
+		<p class="caption"><img src="assets/images/wa_rev.png"></p>
+		<p class="caption"><img src="assets/images/wa_rev_select_edit.png"></p>
+		<p>And then you can add choose the slider you wish:</p>
+		<p class="caption"><img src="assets/images/wa_rev_select.png"></p>
+		<p>You can add/edit/delete/export/import slider in your <strong>Dashboard > Revolution Slider</strong></p>
+		<p class="caption"><img src="assets/images/wa_rev_all.png"></p>
+		<div class="alert"><p>For more details about using Revolution Slider, please have a look at the <a href="https://www.themepunch.com/support-center/" rel="nofollow" target="_blank">Slider Revolution Documentation</a></p></div>
+
+		<div class="section-title">2. HEADER MENU</div>
+
+		<p>Navian comes with multiple Header Menu layouts, you can choose one of them to use combine with the <a href="#header_title"><strong>HEADER PAGE TITLE</strong></a> above:</p>
+		<p class="caption"><img src="assets/images/wa_header_lauout.png"></p>
+
+	</section>
+
+	<!-- Setting up a One Page site -->
+	<section id="onepage">
+		<div class="page-header"><h1>Setting up a One Page site</h1><hr class="notop"></div>
+		<p>A One Page website lets you provide the perfect amount of information that's split into multiple sections for a user to make a decision upon it. Please read below for 2 steps on how to set it up.</p>
+
+		<div class="section-title">Step 1. Creating One Page content</div>
+		<p>Go to <strong>Pages > Add New</strong> and create a new page with multiple rows. In every row you want to navigate, just input the ID of the row.</p>
+		<p class="caption"> <img src="assets/images/wa_rowid.png"></p>
+
+		<div class="section-title">Step 2. Creating One Page menu</div>
+		<p>Go to <strong>Appearance > Menus</strong> and create navigation menu using <strong>Custom Links</strong> and input "<strong>#</strong>" follow by Row ID in URL text input field.</p>
+		<p class="caption"> <img src="assets/images/wa_custom_link.png"></p>
+	</section>
+
+	<!-- Portfolio -->
+	<section id="portfolio">
+		<div class="page-header"><h1>Setting up the Portfolio</h1><hr class="notop"></div>
+
+		<p>Navian theme comes with a Portfolio custom post type that allows you to listing your works in beautiful layouts.</p> 
+
+		<div class="section-title">Enable The WPBakery Page Builder For Portfolio</div>
+
+		<p>If you want to use WPBakery Page Builder for your Portfolio items, you can go to <strong>WPBakery Page Builder > Role Manager</strong> and choose <strong>Custom</strong> from the dropdown then check <strong>portfolio</strong> to use the WPBakery Page Builder.</p>
+
+		<p class="caption"> <img src="assets/images/wa_portfolio_vc.jpg"></p>
+
+		<div class="section-title">Create new Portfolio item</div>
+
+		<p>To create your Portfolio items, please follow the steps below:</p>
+
+		<ol>
+			<li>Go to <strong>Portfolio > Add New</strong> in your Dashboard.</li>
+			<li>Add a title and input all the project related info like Feature image and cover image. (If you want to use the WPBakery Page Builder for your item and you don't see the VC button, please go to <strong>Dashboard > WPBakery Page Builder</strong> and check on the Portfolio post type.)</li>
+			<li>Select Portfolio Category and other meta data if you want it.</li>
+			<li>Click on <strong>Publish / Update</strong> button.</li>
+		</ol>
+
+		<p class="caption"> <img src="assets/images/wa_portfolio.png"></p>
+
+		<div class="section-title">Creating Portfolio page</div>
+
+		<p>Creating a portfolio Page is quite easy with this theme. Just follow the steps here:</p>
+
+		<ol>
+			<li>Go to <strong>Pages > Add New</strong> in your Dashboard.</li>
+			<li>Choose a title like "Portfolio".</li>
+			<li>Switch to the WPBakery Page Builder by clicking the <strong>Backend Editor</strong> button and add the <strong>Portfolio</strong> element.</li>
+			<li>Make sure the Row Type is set to Full width (Stretch Row). Click the <strong>Publish</strong> button.</li>
+		</ol>
+
+		<p class="caption"> <img src="assets/images/wa_portfolio_edit.png"></p>
+		<p class="caption"> <img src="assets/images/wa_portfolio_page.png"></p>
+
+	</section>
+
+	<!-- Custom Post Types -->
+	<section id="custom_post_types">
+		<div class="page-header"><h1>Team, Clients & Testimonials</h1><hr class="notop"></div>
+		<p>Navian theme comes with the custom post types like Team Members, Clients and Testimonials, that allows you to adding to page via WPBakery Page Builder element in beautiful layouts. You can see how to create there items below:</p>
+		
+		<div class="section-title">1. Team Members</div>
+		<ol>
+			<li>Go to <strong>Team Members > Add New</strong> in your Dashboard.</li>
+			<li>Add a title and input all the team member related info like Feature image and social content.</li>
+			<li>Select Team Category and other meta data if you want it.</li>
+			<li>Click on <strong>Publish / Update</strong> button.</li>
+		</ol>
+		<p class="caption"> <img src="assets/images/wa_team.png"></p>
+
+		<p>If you would like to set up a Team Members page, go to your WP Admin and navigate to <strong>Pages > Add New</strong>. Choose a title like "Team Member" and select one of the "Default" templates in the <strong>Page Attributes</strong>. Switch to the WPBakery Page Builder and add the Team element. Click the <strong>Publish</strong> button.</p>
+		<p class="caption"> <img src="assets/images/wa_team_edit.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_team_f.png"></p>
+
+		<div class="section-title">2. Clients</div>
+		<ol>
+			<li>Go to <strong>Clients > Add New</strong> in your Dashboard.</li>
+			<li>Add a title and input all the client related info like logo and client URL.</li>
+			<li>Select Client Category.</li>
+			<li>Click on <strong>Publish / Update</strong> button.</li>
+		</ol>
+		<p class="caption"> <img src="assets/images/wa_client_backend.jpg"></p>
+
+		<p>If you would like to set up a Client page, go to your WP Admin and navigate to <strong>Pages > Add New</strong>. Choose a title like "Client" and select one of the "Default" templates in the <strong>Page Attributes</strong>. Switch to the WPBakery Page Builder and add the Client element. Click the <strong>Publish</strong> button.</p>
+		<p class="caption"> <img src="assets/images/wa_client.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_client_f.png"></p>
+
+		<div class="section-title">3. Testimonials</div>
+		<ol>
+			<li>Go to <strong>Testimonials > Add New</strong> in your Dashboard.</li>
+			<li>Add a title and input all the testimonial related info like user avatar and other meta data.</li>
+			<li>Select Testimonial Category.</li>
+			<li>Click on <strong>Publish / Update</strong> button.</li>
+		</ol>
+		<p class="caption"> <img src="assets/images/wa_testimonial_e.png"></p>
+
+		<p>If you would like to set up a Testimonial page, go to your WP Admin and navigate to <strong>Pages > Add New</strong>. Choose a title like "Testimonial" and select one of the "Default" templates in the <strong>Page Attributes</strong>. Switch to the WPBakery Page Builder and add the Testimonial element. Click the <strong>Publish</strong> button.</p>
+		<p class="caption"> <img src="assets/images/wa_testimonial_b.png"></p>
+		<p>Front-end display:</p>
+		<p class="caption"> <img src="assets/images/wa_testimonial.png"></p>
+
+	</section>
+
+	<!-- Widgets -->
+	<section id="widget_sidebar">
+		<div class="page-header"><h1>Widget, Shortcode & Sidebars</h1><hr class="notop"></div>
+
+		<p class="section-title">Widget</p>
+		<p>WordPress Widgets add content and features to your Sidebars. Examples are the default widgets that come with WordPress; for post categories, tag clouds, navigation, search, etc.</p>
+		<p>You can add a Widget by following these steps:</p>
+		<ul>
+			<li>Go to <strong>Appearance > Widgets</strong>.</li>
+			<li>Choose a Widget and either drag it to the sidebar where you wish it to appear, or click the widget, (select a destination sidebar if your theme has more than one) and click the Add Widget button. There might be more than one sidebar option, so begin with the first one. Once in place, WordPress automatically updates the Theme.</li>
+			<li>Preview the site. You should find that the "default" sidebar elements are now gone and only the new addition is visible.</li>
+			<li>Return to the Widgets Panel to continue adding Widgets.</li>
+			<li>To arrange the Widgets within the sidebar or Widget area, click and drag it into place.</li>
+			<li>To customize the Widget features, click the down arrow in the upper right corner to expand the Widget's interface.</li>
+			<li>To save the Widget's customization, click Save.</li>
+			<li>To remove the Widget, click Remove or Delete.</li>
+		</ul>
+		<p>If you change WordPress Themes, the Widgets will return to the left side of the page in the Widget Archives or Available Widgets list. You may need to add them again and rearrangement depending upon the Theme's ability to preserve other Theme's Widgets.</p>
+		<p>There are 4 widgets supported in this theme as below:</p>
+
+		<p><strong>1. Flickr</strong></p>
+		<p>Getting the Flick ID via <a target="_blank" href="http://idgettr.com/">idgettr.com</a>:</p>
+		<p class="caption"><img src="assets/images/wa_flickr_b.png" /></p>
+		<p class="caption"><img src="assets/images/wa_flickr.png" /></p>
+
+		<p><strong>2. Instagram</strong></p>
+		<p class="caption"><img src="assets/images/wa_instagram_b.png" /></p>
+		<p class="caption"><img src="assets/images/wa_instagram.png" /></p>
+
+		<p><strong>3. Twitter</strong></p>
+		<p>To get Consumer Key & Consumer Secret, you have to <a href="https://apps.twitter.com/app/new" target="_blank">create an app in Twitter</a>, then you'll be taken to a page containing Consumer Key & Consumer Secret.</p>
+		<p class="caption"><img src="assets/images/wa_twitter_b.png" /></p>
+		<p class="caption"><img src="assets/images/wa_twitter.png" /></p>
+
+		<p><strong>4. Posts</strong></p>
+		<p>Display a list of posts order by date, ID and most commented.</p>
+		<p class="caption"><img src="assets/images/wa_posts_b.png" /></p>
+		<p class="caption"><img src="assets/images/wa_posts.png" /></p>
+
+		<p class="section-title">Shortcode</p>
+		<p>Navian theme comes with 2 useful shortcodes which you can use in post, WPBakery Page Builder elements, or text widget.</p>
+
+		<p><strong>1. Dropcap</strong></p>
+		<p><code>[tlg_dropcap text="E" background="#FF512F" color="#fff" round="yes"]-commerce business with clients big and small across a ran ...</code></p>
+		<p class="caption"><img src="assets/images/wa_dropcap.png" /></p>
+
+		<p><strong>2. Highlight</strong></p>
+		<p><code>We work with [tlg_highlight text="clients big and small" background="#825cff" color="#fff"] across a range of sectors</code></p>
+		<p class="caption"><img src="assets/images/wa_hightight.png" /></p>
+
+		<p class="section-title">Sidebar</p>
+		<p>While widget areas typically occur in webpage sidebars, Navian theme can place widget areas on left/right and footer of the page.</p>
+		<p class="caption"><img src="assets/images/wa_sidebar.png" /></p>
+
+	</section>
+
+	<!-- WooCommerce -->
+	<section id="woocommerce">
+		<div class="page-header"><h1>WooCommerce</h1><hr class="notop"></div>
+		
+		<p>WooCommerce is a third party plugin. If you are new to this plugin, please have a look at <a targer="_blank" href="http://docs.woothemes.com/documentation/plugins/woocommerce/getting-started/">Woocemmerce user guide</a>.</p>
+ 		<p>After installing and activating the plugin successfully, you can configure WooCommerce plugin as you need for online shops.</p>
+		
+		<p class="section-title">WooCommerce Settings</h4>
+		<p>To change the shop settings, you can go to <strong>Dashboard > Woocommerce > Settings</strong> and select your desired tab from the drop down.</p>
+		<div class="alert"><p>For the full woocommerce documentation, please go to <a targer="_blank" href="http://docs.woothemes.com/document/configuring-woocommerce-settings/">the Wocommerce settings document</a>.</p></div>
+		<p class="caption"><img src="assets/images/wa_woo_setting.jpg"/></p>
+		<p>You can change the product image size in <strong>Appearances > Customizer > WooCommerce > Product Images</strong>. <br>Here is the product sizes using in the theme:</p>
+		<p class="caption"><img src="assets/images/wa_wooimage.png"/></p>
+
+		<p class="section-title">Creating a Product</p>
+		<p>To create a product you can go to <strong>Dashboard > Products > Add Product</strong>. When you create new products, remember to assign them into categories and tags in order to that all the products can be shown properly in the front-end.</p>
+		<div class="alert"><p>For the more details of creating a Product, please have a look at <a target="_blank" href="http://docs.woothemes.com/documentation/plugins/woocommerce/getting-started/setup-products/">WooCommerce setup product documentation</a></p></div>
+
+		<p class="section-title">Woocommerce Widgets</p>
+		<p>The WooCommerce plugin comes with a number of widgets. The widgets will be displayed on the shop page only.</p>
+		<p>In order to display them on shop Shop page, you can go to <strong>Appearance > Widgets</strong> and drag Woocommerce widgets to <strong>Shop Sidebar</strong> on the right side.</p>
+		<p class="caption"><img src="assets/images/wa_woosidebar.png" /></p>
+		<p class="caption"><img src="assets/images/wa_woowidget.png" /></p>
+	</section>
+
+	<!-- Theme Customization -->
+	<section id="theme_customization">
+		<div class="page-header"><h1>Theme Customization</h1><hr class="notop"></div>
+		
+		<p>Theme Options can be found under <strong>Appearance > Customize</strong>. These settings may be overridden for individual Page / Post. This customization control the global settings for the entire website, unless otherwise specified in <a href="#page_options">Page / Post Options</a>.</p>
+
+		<p class="section-title">Site Identity</p>
+		<p><strong>Site Layout</strong>: Full Width, Boxed</p>
+		<p class="caption"><img src="assets/images/wa_custom_site_identity.png" /></p>
+
+		<p class="section-title">Colors</p>
+		<p>Here you can changes your own colors schema for using with this theme.</p>
+		<p class="caption"><img src="assets/images/wa_custom_color.png" /></p>
+
+		<p class="section-title">Background Image</p>
+		<p>The background image here will be used when you set the <strong>Site Layout</strong> as <strong>Boxed</strong></p>
+		<p class="caption"><img src="assets/images/wa_custom_bgimage.png" /></p>
+
+		<p class="section-title">Fonts</p>
+		<p>You can choose here the latest list of Google Web fonts for Body text and Heading text, for other content you can also set different fonts in WPBakery Page Builder elements.</p>
+		<p>About the Custom CSS field, please <strong>DO NOT</strong> using <code>&lt;style&gt</code> tag when you add your custom style here, just plain CSS code only.</p>
+		<p class="caption"><img src="assets/images/wa_custom_fontcss.png" /></p>
+
+		<p class="section-title">Header</p>
+		<p>Here you can find number of options for your Header like Logo dark/light, Header layout, Header size, etc.</p>
+		<p class="caption"><img src="assets/images/wa_custom_header.png" /></p>
+
+		<p class="section-title">Footer</p>
+		<p>This is where we give you control over the overall style of Footer layout and copyright information.</p>
+		<p class="caption"><img src="assets/images/wa_custom_footer.png" /></p>
+
+		<p class="section-title">Search</p>
+		<p>This is where we give you control over the overall style of Search page layout.</p>
+		<p class="caption"><img src="assets/images/wa_custom_search.png" /></p>
+
+		<p class="section-title">Blog</p>
+		<p>Here you will find all the options for Blog layout, Blog title/subtitle, etc.</p>
+		<p class="caption"><img src="assets/images/wa_option_blog.png" /></p>
+
+		<p class="section-title">Portfolio</p>
+		<p>These are number of options from Portfolio layout to title/subtitle of the Portfolio page here.</p>
+		<p class="caption"><img src="assets/images/wa_option_portfolio.jpg" /></p>
+
+		<p class="section-title">Shop</p>
+		<p>Here we provide for you to control Shop layout, title/subtitle and product settings.</p>
+		<p class="caption"><img src="assets/images/wa_custom_shop.png" /></p>
+
+		<p class="section-title">System</p>
+		<p>This area allows you to config all other options of the theme. You can turn on/off theme elements here.</p>
+		<p class="caption"><img src="assets/images/wa_custom_system.png" /></p>
+		<div class="alert"><p>Note: To add more icon fonts into the icon list, please add the icon font classes separated by commas into <strong>Appearances > System > Custom Icons Font Classes</strong>, for example: <strong>fa fa-whatsapp, fa fa-lock</strong>. You can see all available FontAwesome icons here: <a target="_blank" href="assets/icons/Icons-FontAwesome.html">FontAwesome Icon Font</a>. In case you want to add another icon font library, please have a look at the topic <a target="_blank" href="http://www.themelogi.com/tickets/topic/heading-title-icons/#post-5756">here</a>.</p></div>
+	</section>
+
+	<!-- Knowledge -->
+	<section id="knowledge">
+		<div class="page-header"><h1>License & Knowledge</h1><hr class="notop"></div>
+
+		<p class="section-title">Theme License</p>
+		<p>The purchase you made allows you to use our theme on one domain. If you want to use Navian theme on another domain, please <a href="http://themeforest.com/cart/add_items?ref=THEMELOGI&item_ids=20527137">purchase another license</a></p>
+
+		<p class="section-title">Premium Plugins License (WPBakery Page Builder & Revolution Slider)</p>
+		<p>When you purchase a theme from ThemeForest that bundles Premium plugins, you are free to use these Premium plugins with the theme. However, your theme purchase does not give you individual Premium plugins licenses that allow you to activate or download these plugins as you wish.</p> 
+		<p>Activation Premium plugins doesn't mean the plugin will not work but only that you cannot received direct updates. Please don’t worry if you see warning messages about the plugin license activation.</p>
+		<p>You can use these plugins with the theme, and you are fully compliant with the Envato's policy, but you cannot activate them as the owner.</p>
+		<p>Anytime our theme is updated, the latest plugin version for these Premium plugins will be included for free, so you don't need to buy your own licenses to properly work with the plugins.</p>
+		<p>These rules ensure we will fully test plugins to make certain there are no bugs that will conflict with our own update.</p>
+		<p>You can read more details about Bundled Plugins License in <a href="https://help.market.envato.com/hc/en-us/articles/213762463-Bundled-Plugins" target="_blank" rel="nofollow">this article</a>.</p>
+
+		<p class="section-title">The message: "Theme is missing the style.css stylesheet error"</p>
+		<p>This is a common issue that can occur when installing a WordPress themes. For the details of solution, please have a look at <a href="https://help.market.envato.com/hc/en-us/articles/202821510-Theme-is-missing-the-style-css-stylesheet-error" target="_blank" rel="nofollow">this article</a>.</p>
+
+		<p class="section-title">The message: "Are you sure you want to do this? Please try again."</p>
+		<p>If you are installing your theme from the WordPress theme installer, but get the message above, most likely your web server is configured that only allow a certain size ZIP file to be uploaded via WP admin. In this case, you can simply unzip the theme file and upload it to the wp-content/themes folder via FTP.</p>
+
+		<p class="section-title">The message: "Allowed memory size exhausted", "Internal server error" or the site crashes</p>
+		<p>This is most likely due to your server resources being limited by its configuration. For the details of solution, please have a look at <a href="http://www.themelogi.com/tickets/topic/faq/" target="_blank">our FAQs</a> (in Question 1).</p>
+
+		<p class="section-title">Theme Updates</p>
+		<p>Updating Navian is rather similar to installing the theme. Follow these steps to update your theme:</p>
+		<ol>
+			<li>Download the Navian Theme again in your <a href="https://themeforest.net/downloads" target="_blank">Themeforest Downloads section</a>. You will always get the most recent Theme files there.</li>
+			<li>Extract the file to get the Theme folder.</li>
+			<li>Go to <strong>Appearance > Themes</strong>. Deactivate Navian Theme by activating a different theme.</li>
+			<li>Delete Navian Theme (your content will not be lost).</li>
+			<li>Upload the latest version of Navian Theme and activate it.</li>
+		</ol>
+		<p>Or you can update the theme via FTP as detail below:</p>
+		<ol>
+			<li>Login to your FTP account and navigate to your WordPress theme directory.</li>
+			<li>Simply drop the Navian Theme folder and replace with the new one.</li>
+		</ol>
+
+		<div class="alert"><p><strong>Note</strong>: Always use a Child Theme when modifying any theme files so that your changes will not be lost on the Theme updates.</p></div>
+
+		<p class="section-title">Plugins Updates</p>
+		<p>You can upgrade required plugins of the theme by following the steps here:</p>
+		<ol>
+			<li>Go to <strong>Dashboard > Plugins</strong>, locate WPBakery Page Builder, Revolution Slider or TLG Framework in the list, deactivate it and delete it</li>
+			<li>You will see a notice asking you to install the plugins for the theme. Just follow the instructions to install plugins.</li>
+			<li>If you don't see any notices, you can find them in <code>Plugins</code> folder of the theme package for manual installation.</li>
+		</ol>
+
+		<div class="alert"><p><strong>Note</strong>:  Always update plugins (if available) after a Theme update.</p></div>
+
+		<p class="section-title">Icons</p>
+		<p>We've included two different Icon Fonts within this Theme: <strong>FontAwesome</strong> & <strong>Themify</strong>. For now, we only ships Themify icons for using with Menu and WPBakery Page Builder elements but you can also manual insert the name of FontAwesome Icon you want to use in page/post content. For details of using there icon fonts, please have a look on the links here:</p>
+
+		<ol>
+			<li><a target="_blank" href="assets/icons/Icons-Themify.html">Themify Icon Font</a></li>
+			<li><a target="_blank" href="assets/icons/Icons-FontAwesome.html">FontAwesome Icon Font</a></li>
+		</ol>
+
+		<p class="section-title">Multilingual</p>
+		<p>Navian is fully translation ready! The translation files .pot are located in languages folder in the theme package. We've included English as a default.</p>
+
+		<p>To translate the theme, please follow these steps:</p>
+		<ol>
+			<li>Download and install <a target="_blank" href="https://poedit.net/">POEdit</a></li>
+			<li>Open the .pot file of the theme (inside languages folder) in Poedit and create new translation.</li>
+			<li>Save your translations in a .po file (for example: fr_FR.po). Check the <a target="_blank" href="http://codex.wordpress.org/WordPress_in_Your_Language">WordPress Codex language</a> to give your file the right name.</li>
+			<li>Edit the new .po file using POEdit</li>
+			<li>PoEdit will automatically compile a .mo file for you when you save your work on the existing .po file.</li>
+			<li>Change the language in the admin settings screen. <strong>Settings > General > Site Language</strong>.</li>
+		</ol>
+
+		<p>If you want to provide your website in multi-languages, we recommend the following plugins:</p>
+		<ol>
+			<li><a href="https://wordpress.org/plugins/qtranslate-x/" target="_blank">qTranslate X</a> - This free plugin offers a way to maintain dynamic multilingual content on a WordPress site.</li>
+			<li><a href="http://wpml.org/" target="_blank">WPML</a> - This commercial plugin makes it easy to build multilingual sites and run them. It's powerful enough for corporate sites, yet simple for blogs.</li>
+		</ol>
+
+		<p class="section-title">Customizations</p>
+		<p>Please remember that WordPress Themes on Themeforest are purchased as-is. If you want to make custom changes to the theme that requires theme modification, behaviour changes or 3rd party plugin integration, we suggest that you hire a developer. We don't offer customisations of your WordPress Installation.</p>
+		<p>Here are some good places to find a WordPress Freelancer:</p>
+		<ol>
+			<li><a href="http://studio.envato.com/explore/wordpress" target="_blank">Envato Studio</a></li>
+			<li><a href="https://codeable.io" target="_blank">Codeable</a></li>
+			<li><a href="http://premium.wpmudev.org/wordpress-development" target="_blank">WPMU</a></li>
+		</ol>
+		<p>Otherwise, if you need help about using theme features, bug reports & reasonable feature requests, please submit ticket to <a target="_blank" href="http://www.themelogi.com/tickets">THEMELOGI support forum</a> and our support team will happy to help you out. Also, you may want to have a look at the <a target="_blank" href="http://www.themelogi.com/tickets/topic/faq/">THEMELOGI FAQs page</a> for the common questions & answers about our themes.</p>
+	</section>
+
+	<!-- Version Log -->
+	<section id="log">
+		<div class="page-header"><h1>Version Log</h1><hr class="notop"></div>
+		<h4><strong>Version 1.3.2 (28 September 2021)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.5.8</li>
+			<li>Improved some minor theme scripts</li>
+		</ul>
+		<h4><strong>Version 1.3.1 (14 July 2021)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.7.0</li>
+			<li>Updated Slider Revolution to version 6.5.4</li>
+		</ul>
+		<h4><strong>Version 1.2.9 (26 May 2021)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.4.11</li>
+		</ul>
+		<h4><strong>Version 1.2.8 (14 March 2021)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.6.0</li>
+			<li>Updated Slider Revolution to version 6.4.3</li>
+			<li>Improved some minor theme style</li>
+		</ul>
+		<h4><strong>Version 1.2.7 (16 February 2021)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.3.9</li>
+			<li>Updated TLG Framework to version 3.0.8</li>
+		</ul>
+		<h4><strong>Version 1.2.6 (17 December 2020)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.5.0</li>
+		</ul>
+		<h4><strong>Version 1.2.5 (15 December 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.3.3</li>
+			<li>Fixed left center header menu layout</li>
+		</ul>
+		<h4><strong>Version 1.2.4 (05 December 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.3.2</li>
+			<li>Fixed sticky header on mobile</li>
+			<li>Improved some minor theme style</li>
+		</ul>
+		<h4><strong>Version 1.2.3 (02 December 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.3.1</li>
+			<li>Fixed header logo in https connection</li>
+		</ul>
+		<h4><strong>Version 1.2.2 (24 November 2020)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.4.2</li>
+		</ul>
+		<h4><strong>Version 1.2.1 (14 October 2020)</strong></h4>
+		<ul>
+			<li>Added support woocommerce default layout</li>
+			<li>Fixed masonry effect in small screensize</li>
+		</ul>
+		<h4><strong>Version 1.2 (02 October 2020)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.4.1</li>
+			<li>Updated TLG Framework to version 3.0.7</li>
+			<li>Added support shortcode for Accordion/Tabs element</li>
+		</ul>
+		<h4><strong>Version 1.1.9 (17 September 2020)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.4.0</li>
+			<li>Updated Slider Revolution to version 6.2.23</li>
+		</ul>
+		<h4><strong>Version 1.1.8 (22 August 2020)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.3.0</li>
+			<li>Updated Slider Revolution to version 6.2.22</li>
+			<li>Added category option in breadcrumb</li>
+		</ul>
+		<h4><strong>Version 1.1.7 (12 August 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.2.18</li>
+			<li>Updated compatible with latest WordPress</li>
+		</ul>
+		<h4><strong>Version 1.1.6 (30 June 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.2.15</li>
+			<li>Fixed sticky menu feature</li>
+		</ul>
+		<h4><strong>Version 1.1.5 (12 May 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.2.6</li>
+		</ul>
+		<h4><strong>Version 1.1.4 (02 May 2020)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.2.0</li>
+			<li>Updated TLG Framework to version 3.0.6</li>
+		</ul>
+		<h4><strong>Version 1.1.3 (03 Apr 2020)</strong></h4>
+		<ul>
+			<li>Added an option to hide author info in single post</li>
+			<li>Fixed the Woocommerce product listing style</li>
+		</ul>
+		<h4><strong>Version 1.1.2 (12 Mar 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.2.2</li>
+			<li>Updated TLG Framework to version 3.0.5</li>
+			<li>Updated new Instagram Basic Display API</li>
+		</ul>
+		<h4><strong>Version 1.1.1 (04 Mar 2020)</strong></h4>
+		<ul>
+			<li>Updated TLG Framework to version 3.0.4</li>
+			<li>Fixed resize image feature</li>
+		</ul>
+		<h4><strong>Version 1.1.0 (02 Mar 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.2.1</li>
+			<li>Fixed testimonial column layout</li>
+		</ul>
+		<h4><strong>Version 1.0.9 (24 Jan 2020)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.1.7</li>
+			<li>Added Sticky Header option on mobile</li>
+			<li>Fixed toggle menu issues</li>
+		</ul>
+		<h4><strong>Version 1.0.8 (02 Jan 2020)</strong></h4>
+		<ul>
+			<li>Updated WPBakery Page Builder to version 6.1.0</li>
+		</ul>
+		<h4><strong>Version 1.0.7 (14 Nov 2019)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.1.5</li>
+			<li>Added Seperator option in Minimal header</li>
+		</ul>
+		<h4><strong>Version 1.0.6 (12 Nov 2019)</strong></h4>
+		<ul>
+			<li>Updated TLG Framework to version 3.0.3</li>
+			<li>Fixed Intro Carousel element with custom style</li>
+		</ul>
+		<h4><strong>Version 1.0.5 (10 Nov 2019)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.1.4</li>
+			<li>Fixed dropdown language flag</li>
+		</ul>
+		<h4><strong>Version 1.0.4 (30 Oct 2019)</strong></h4>
+		<ul>
+			<li>Updated TLG Framework to version 3.0.2</li>
+			<li>Added Page Title Heading option</li>
+			<li>Added Google Map embed style</li>
+		</ul>
+		<h4><strong>Version 1.0.2 (22 Oct 2019)</strong></h4>
+		<ul>
+			<li>Updated TLG Framework to version 3.0.1</li>
+			<li>Added Heading Tags option in Heading element</li>
+			<li>Added Scroll To Top option to show on mobile</li>
+			<li>Fixed social icon color on hover</li>
+		</ul>
+		<h4><strong>Version 1.0.1 (04 Oct 2019)</strong></h4>
+		<ul>
+			<li>Updated Slider Revolution to version 6.1.3</li>
+			<li>Improved some minor theme style</li>
+		</ul>
+		<h4><strong>Version 1.0 (21 Sep 2019)</strong></h4>
+		<ul>
+			<li>Navian official Release</li>
+		</ul>
+		<br><br>
+		<div class="alert"><p class="no-border"><h3 style="margin-top: 0;">Thank you for purchasing Navian WordPress Theme!</h3><br>If you like our theme and want to support us please rate it <img src="assets/images/stars.png" /> in your <a href="https://themeforest.net/downloads" target="_blank">Themeforest Downloads section</a>.</p></div>
+	</section>
+
+	</div>
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/libs.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
